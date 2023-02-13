@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-12 07:20:42 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZFM0w5Q007MjAyMy0wMi0xMjswNjoyMjowOCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZFM0w5Q007MjAyMy0wMi0xMjswNzoyMDo0MiBQTTsxNDszNDU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mealTotal" type="Real" array="False" size=""/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <declare name="totalWithTip" type="Real" array="False" size=""/>
+            <declare name="mealTotalTipFifteen" type="Real" array="False" size=""/>
+            <declare name="mealTotalTipEighteen" type="Real" array="False" size=""/>
+            <declare name="mealTotalTipTwenty" type="Real" array="False" size=""/>
+            <input variable="mealTotal"/>
+            <assign variable="mealTotalTipFifteen" expression="mealTotal * 1.15"/>
+            <assign variable="mealTotalTipEighteen" expression="mealTotal * 1.18"/>
+            <assign variable="mealTotalTipTwenty" expression="mealTotal * 1.2"/>
+            <output expression="&quot;With 15% tip:&quot;&amp;ToChar(13)&amp;&quot;Total: &quot;&amp;mealTotal&amp;ToChar(13)&amp;&quot;Tip: &quot;&amp;mealTotalTipFifteen-mealTotal&amp;ToChar(13)&amp;&quot;Total with tip: &quot;&amp;mealTotalTipFifteen&amp;ToChar(13)&amp;ToChar(13)&amp;&quot;With 18% tip: &quot;&amp;ToChar(13)&amp;&quot;Total: &quot;&amp;mealTotal&amp;ToChar(13)&amp;&quot;Tip: &quot;&amp;mealTotalTipEighteen-mealTotal&amp;ToChar(13)&amp;&quot;Total with tip: &quot;&amp;mealTotalTipEighteen&amp;ToChar(13)&amp;ToChar(13)&amp;&quot;With 20% tip: &quot;&amp;ToChar(13)&amp;&quot;Total: &quot;&amp;mealTotal&amp;ToChar(13)&amp;&quot;Tip: &quot;&amp;mealTotalTipTwenty-mealTotal&amp;ToChar(13)&amp;&quot;Total with tip: &quot;&amp;mealTotalTipTwenty" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

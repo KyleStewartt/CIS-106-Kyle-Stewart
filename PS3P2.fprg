@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-12 06:41:20 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZFM0w5Q007MjAyMy0wMi0xMjswNjoyMjowOCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZFM0w5Q007MjAyMy0wMi0xMjswNjo0MToyMCBQTTs4OzM0MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="purchasePricePerShare" type="Real" array="False" size=""/>
+            <declare name="currentStockPrice" type="Real" array="False" size=""/>
+            <declare name="quanityOfStock" type="Real" array="False" size=""/>
+            <declare name="valueOfStock" type="Real" array="False" size=""/>
+            <input variable="purchasePricePerShare"/>
+            <input variable="currentStockPrice"/>
+            <input variable="quanityOfStock"/>
+            <assign variable="valueOfStock" expression="(currentStockPrice - purchasePricePerShare) * quanityOfStock"/>
+            <output expression="&quot;The value of the stock is: &quot; &amp; valueOfStock &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
